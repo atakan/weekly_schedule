@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper]{geometry}
+\usepackage{color}
+\usepackage[utf8x]{inputenc}
+\usepackage{mathpazo}
+\usepackage{schedule}
+\usepackage{hyperref}
+
+\pagestyle{empty}
+
+\CellHeight{.5in}
+\CellWidth{1.25in}
+\TimeRange{9:00-18:00}
+\SubUnits{20}
+\BeginOn{Monday}
+\TextSize{\small}
+\FiveDay
+
+% gentle pride Color Palette http://www.color-hex.com/color-palette/55469
+\definecolor{llred}{RGB}{242,82,53}
+\definecolor{lired}{RGB}{242,197,189}
+\definecolor{llora}{RGB}{238,170,86}
+\definecolor{llyel}{RGB}{238,232,96}
+\definecolor{llgre}{RGB}{100,242,138}
+\definecolor{llblu}{RGB}{99,148,231}
+
+\NewAppointment{class}{llred}{lired}
+\NewAppointment{ofhour}{llgre}{black}
+\NewAppointment{meeting}{llora}{black}
+\NewAppointment{seminar}{llyel}{black}
+
+\begin{document}
+\begin{schedule}[\hskip-1.5cm M. Atakan G\"urkan, {\tt
+agurkan@metu.edu.tr}, Fall Semester, 2018-19]%
+  \class{PHYS 105(9)}{P4}{W}{10:40-11:30}
+  \class{PHYS 105(9)\\Gen. Physics I}{P3}{Th}{8:40-10:30}
+  \class{PHYS 105(21)}{P1}{M}{12:40-13:30}
+  \class{PHYS 105(21)\\Gen. Physics I}{P4}{Th}{12:40-14:30}
+  \class{PHYS 207}{P4}{M}{14:40-15:30}
+  \class{PHYS 207\\Modern\\ Physics}{P4}{W}{13:40-15:30}
+%  \meeting{Phys400 Meeting}{P421}{Th}{13:00-14:30}
+  \seminar{Dep. Seminar}{Cavit Erginsoy}{Th}{14:40-15:30}
+  \ofhour{Office Hour}{P411}{M}{15:40-16:30}
+  \ofhour{Office Hour}{P411}{Th}{10:40-11:30}
+  \meeting{Research\\Meeting}{\relax}{T}{14:00-15:30}
+%  \meeting{\c{C}E meeting}{P411}{F}{10:40-12:00}
+\end{schedule}%
+
+This is prepared by \LaTeX, if you want to use its source as a template
+for your own purposes, you can download it from\\
+\url{http://www.physics.metu.edu.tr/~agurkan/schedule_ato.tex}.
+
+\end{document}

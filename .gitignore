@@ -1,0 +1,4 @@
+#ignore (La)TeX stuff
+*.out
+*.aux
+*.log
